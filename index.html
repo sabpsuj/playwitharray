@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <title>Play With Array</title>
+        <meta name="description" content="Here is my little snippet storage to show you how simple and funny array methods can be.">
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Tajawal:200,300,400,500,700,800,900" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <header>
+            <h1>Hey! Play with Array!</h1>
+            <p>Here is my little snippet storage to show you how simple and funny array methods can be.</p>
+        </header>
+        <article>
+            <h2>forEach()</h2>
+            <p>I'm sure that you know <b>the for loop</b>. Sometimes it's a bit tricky to use, and actually, that is not the most elegant way to loop over the array. <b>forEach()</b> method comes here to handle it and simplify your code. Just use it instead of your loop. Callback for this inbuilt method is another function, which is executed once for each element while the forEach method is looping over your array.</p>
+            <div class="forEach"></div>
+            <p>Feel free to use this snippet and see the output in your console. As you can see we've looped through our array and we consoled each element with its index and current value. So, as you can see the general usage of this method is just handling the execution of another function on each element of an array.</p> 
+            <p> And below another example:</p>
+            <div class="forEachExample"></div>
+            <p>The first line, we declared the variable called <b>food</b>. Then, below you can see the fat arrow function which concat <b>v</b> with string <i>(here, as you can see it's a single letter <b>s</b>)</i>. It's an anonymous function stored in <b>multi</b> variable, below we are using it as a callback to our <b>forEach()</b> method. And now you know how to multiply your food resources in a simple way ;).</p>
+            <p class="remember"><b>forEach()</b> method returns <i>undefined</i>.</p>
+            <h2>map()</h2>
+            <p>Next method I'd like to introduce you is a <b>map()</b> method. It's a bit different from the previous one, but as a standard feature, you can find here also a loop over an array. Look at my little portion of code and see how it works. As previously I declared a variable which stores a function. This time I used another JavaScript built-in function which is available for a Math object. <b>Math.pow</b> allows us to return the base to the exponent power. First parameter here, is responsible for each element in the array, and the second one indicates the power value - here we have 2.</p>
+            <p>Then you can see that I declared another variable to assign a value from our map function. It's callback, as previously, is declared before function. The output of this method will be a totally new array with values changed with the pattern function (square).</p>
+            <p class="remember"><b>map()</b> method returns <i>new array</i>.</p>
+            <div class="map"></div>
+            <h2>reduce</h2>
+            <img src="img/reduce.png" alt="reduce snippet">
+            <h2>filter</h2>
+            <img src="img/filter.png" alt="filter snippet">
+            <h2>every</h2>
+            <img src="img/every.png" alt="every snippet">
+            <h2>some</h2>
+            <img src="img/some.png" alt="somesnippet">
+        </article>
+
+        
+
+        <script src="app.js"></script>
+    </body>
+</html>
